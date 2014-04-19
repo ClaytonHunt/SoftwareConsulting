@@ -1,9 +1,7 @@
 (function (jake, task, require, console) {
     'use strict';
 
-    task("default", ["Build Started", "lint build", "lint application", "Build Finished"], function () {
-
-    });
+    task("default", ["Build Started", "lint build", "lint application", "Build Finished"]);
 
     task("lint build", [], function () {
         var lint = require('./lint/lint_runner.js');
