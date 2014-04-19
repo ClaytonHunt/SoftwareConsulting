@@ -14,18 +14,19 @@ Minimum Marketing Feature
 - generate estimates
 
 User Stories:
-* As a Company in need of short term development work I want to find companies by using a search engine so that it is easier for me to find them
+* As a Company I want to contract software developers so that I can have short term development work done
+	* Given I visit your application When I access the main view Then I should see contact Information
+	- Given I find your contact information When I choose to email you Then I should be presented with a simple for for contacting you	
+
+- As a Company in need of short term development work I want to find companies by using a search engine so that it is easier for me to find them
 	- Given I am searching for developers When I use the search terms "software consulting" Then I should find your company
 	- Given I am searching for developers When I use the search terms "software contractor" Then I should find your company
 	- Given I am searching for developers When I use the search terms "<city> developer" Then I should find your company
 	- Given I am searching for developers When I use the search terms "quality software" Then I should find your company
 
-- As a Company I want to contract software developers so that I can have short term development work done
-	* Given I visit your application When I access the main view Then I should see contact Information
-	- Given I find your contact information When I choose to email you Then I should be presented with a simple for for contacting you	
-
 Engineering Tasks:
-* automated build
+X automated build
+* static code analysis (Lint)
 - continuous integration
 - server-side testing
 - client-side testing

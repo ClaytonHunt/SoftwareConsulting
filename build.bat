@@ -1,7 +1,3 @@
-ECHO OFF
-CLS
-ECHO Running Build
-ECHO ==============
-
-ECHO Build Finished
-ECHO ==============
+@echo off
+cls
+build/node_modules/.bin/jake -f build/Jakefile.js %*
