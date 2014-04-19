@@ -1,14 +1,20 @@
 (function (jake, task, require, console) {
     'use strict';
 
-    task("default", ["Build Started", "lint", "Build Finished"], function () {
+    task("default", ["Build Started", "lint build", "lint application", "Build Finished"], function () {
 
     });
 
-    task("lint", [], function () {
+    task("lint build", [], function () {
         var lint = require('./lint/lint_runner.js');
-        var files = getFileList();
-        lint.validateFileList(files.toArray(), getOptions(), {});
+        var files = getBuildFileList();
+        lint.validateFileList(files.toArray(), getBuildOptions(), {});
+    });
+    
+    task("lint application", [], function () {
+        var lint = require('./lint/lint_runner.js');
+        var files = getApplicationFileList();
+        lint.validateFileList(files.toArray(), getApplicationOptions(), {});
     });
 
     task("Build Started", function () {
@@ -23,16 +29,29 @@
         console.log("==============");
     });
 
-    function getFileList() {
-        var files = new jake.FileList();        
-        files.include('**/*.js');
+    function getBuildFileList() {
+        var files = new jake.FileList();
+        files.include('./build/**/*.js');
         files.exclude('node_modules');
         return files;
     }
 
-    function getOptions() {
+    function getBuildOptions() {
         return {
             node: true
+        };
+    }
+    
+    function getApplicationFileList() {
+        var files = new jake.FileList();
+        files.include('**/*.js');
+        files.exclude('build');
+        return files;
+    }
+
+    function getApplicationOptions() {
+        return {
+
         };
     }
 }(jake, task, require, console));
