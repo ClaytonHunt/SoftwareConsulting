@@ -1,4 +1,4 @@
-(function (task, require, console) {
+(function (jake, task, require, console) {
     'use strict';
 
     task("default", ["Build Started", "lint", "Build Finished"], function () {
@@ -35,4 +35,4 @@
             node: true
         };
     }
-}(task, require, console));
+}(jake, task, require, console));
