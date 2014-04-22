@@ -28,5 +28,5 @@ Engineering Tasks:
 X automated build
 X static code analysis (Lint)
 X continuous integration -- I will have to setup a virtual machine for this one, it will not be in source control
-* server-side testing
+* server-side testing - I'm not sure I need this right now, might pick it up later
 - client-side testing
