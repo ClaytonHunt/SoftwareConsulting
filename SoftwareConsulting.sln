@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareConsulting.UI.Web", "SoftwareConsulting.UI.Web\SoftwareConsulting.UI.Web.csproj", "{B0C6201B-6B62-4E5A-A5E1-BCA9815E6918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareConsulting.UI.Web.Tests", "..\..\users\clayton\documents\visual studio 2013\Projects\SoftwareConsulting.UI.Web\SoftwareConsulting.UI.Web.Tests\SoftwareConsulting.UI.Web.Tests.csproj", "{6567D079-258C-41FF-9B36-985F2FEA5ED0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareConsulting.UI.Web.Tests", "SoftwareConsulting.UI.Web.Tests\SoftwareConsulting.UI.Web.Tests.csproj", "{6567D079-258C-41FF-9B36-985F2FEA5ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
