@@ -13,6 +13,8 @@
         var files = new jake.FileList();
         files.include('**/*.js');
         files.exclude('build');
+        files.exclude('packages');
+        files.exclude('**/thirdParty/*.js');
         return files;
     }
 
