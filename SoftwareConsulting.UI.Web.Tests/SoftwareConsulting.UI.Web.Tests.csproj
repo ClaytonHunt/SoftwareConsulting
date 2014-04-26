@@ -82,6 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainPage\Given_MainPage.cs" />
+    <Compile Include="MainPage\SearchEngineOptimization\GivenMainPageWhenDisplayed.cs" />
+    <Compile Include="MainPage\SearchEngineOptimization\GivenMainPageWhenDisplayedThenSearchTerms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
