@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace SoftwareConsulting.UI.Web.Controllers
 {
@@ -6,6 +7,10 @@ namespace SoftwareConsulting.UI.Web.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.SearchTerms = new List<string> {
+                "Software Consulting"
+            };
+
             return View();
         }        
     }
